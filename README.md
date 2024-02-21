@@ -1,7 +1,7 @@
 # STM32 Object (Agricultural Herb) Detection and Tracking Project
 
 ## Overview
-In agricultural fields, efficient detection and removal of agricultural herbs can significantly increase yield. This STM32 project aims to provide a mechanism to detect and track agricultural herbs, represented by green objects, in an agricultural field. The project utilizes STM32 microcontroller, servo motors, cameras, and other electronic devices to achieve this goal. Here you can [watch the video representation of project.](https://youtu.be/UNbD-ZfWUSE) 
+In agricultural fields, efficient detection and removal of agricultural herbs can significantly increase yield. This STM32 project aims to provide a mechanism to detect and track agricultural herbs, represented by green objects, in an agricultural field. The project utilizes STM32 microcontroller, servo motors, cameras, and other electronic devices to achieve this goal. Here you can [watch the video representation of project](https://youtu.be/UNbD-ZfWUSE) and [see](https://github.com/mehmetyucelsaritas/STM32_Online_Object_Detection/blob/main/rapor.pdf) more detailed .pdf representation..
 
 ## General Preliminary Design
 **The project consists of two main sections:**
@@ -27,9 +27,16 @@ In agricultural fields, efficient detection and removal of agricultural herbs ca
 - Python Image Processing: Analyzes the image to detect the object and obtain its coordinates.
 - Coordinates of Object: Resulting coordinates of the object within the frame are used for tracking.
 
+![section 1 work flow](https://github.com/mehmetyucelsaritas/STM32_Online_Object_Detection/blob/main/images/section1%20flow%20chart.png)
+
 ## Section 2: Data Handling and Actuation Pipeline
 - Serial Protocol: Coordinates are communicated to the STM32 microcontroller via USART.
 - STM32 and C Programming: Coordinates received by the microcontroller are processed and servo motors are controlled accordingly.
 - I2C Protocol: Coordinates are displayed on an LCD screen connected to the STM32.
 - Pan Tilt Servo Driving and Data Conversion: Servo motors adjust their angles to point the laser at the herb's location.
 - Laser: Provides a visual indication of the herb's position.
+
+![section 2 work flow](https://github.com/mehmetyucelsaritas/STM32_Online_Object_Detection/blob/main/images/section2%20flow%20chart.png)
+
+## Conclusion
+This project provides a comprehensive system for detecting and tracking agricultural herbs in real-time using STM32 microcontroller, cameras, and servo motors. It can be integrated into larger automated systems to improve multiple applications at a very low cost. 
